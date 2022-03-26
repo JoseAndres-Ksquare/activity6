@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  background-color: #ecf2f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "uno uno dos tres"
+    "cuatro cinco cinco tres";
+  height: 100vh;
+  gap: 30px;
+}
+
+.grid-item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+}
+.uno {
+  background-color: #48556a;
+  color: whitesmoke;
+  grid-area: uno;
+}
+.p-top-1 {
+  color: #c7c9c9;
+  font-size: 24px;
+}
+.p-bottom-1 {
+  font-size: 20px;
+  color: gray;
+}
+
+.p-top {
+  font-size: 24px;
+  color: #525c6d;
+}
+.p-bottom {
+  font-size: 20px;
+  color: #a8afb9;
+}
+
+.dos {
+  grid-area: dos;
+}
+.tres {
+  grid-area: tres;
+}
+
+.cuatro {
+  grid-area: cuatro;
+}
+
+.cinco {
+  grid-area: cinco;
+}
+.users {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  display: flex;
+  align-items: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.border-purple {
+  border: 3px solid #9c70e0;
+}
+.border-grey {
+  border: 3px solid gray;
+}
+
+.profile-name {
+  margin-left: 20px;
+}
